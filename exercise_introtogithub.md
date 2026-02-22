@@ -80,12 +80,9 @@ branch** - Commit message:
     -   Base: `main`
     -   Compare: `setup-readme`
 
-4.  Title:
+4.  Comment
 
-    `Add personal introduction to README`
-
-In the description, answer: - What did you add? - Why is it better than
-the original README?
+    Make a comment regarding what/why you did what you did.
 
 Create the Pull Request.
 
@@ -139,8 +136,7 @@ Title:
 
 `Add hello.py script`
 
-In the description: - What does this code do? - Why is it useful to test
-code in small steps?
+In the description: - What does this code do? 
 
 Create the Pull Request.
 
