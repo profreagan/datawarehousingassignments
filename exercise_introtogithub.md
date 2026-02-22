@@ -12,8 +12,6 @@ By completing this assignment, you will:
 -   Approve and merge a Pull Request
 -   Learn the GitHub flow
 
-------------------------------------------------------------------------
-
 # Part 1 --- Create Your Repository
 
 1.  Go to GitHub.com
@@ -32,8 +30,6 @@ By completing this assignment, you will:
 
 6.  Click **Create repository**
 
-------------------------------------------------------------------------
-
 # Part 2 --- Create Your First Branch 
 
 You may not edit `main`.
@@ -47,8 +43,6 @@ You may not edit `main`.
     `setup-readme`
 
 You should now be working in `setup-readme`.
-
-------------------------------------------------------------------------
 
 # Part 3 --- Edit README in Your Branch
 
@@ -75,8 +69,6 @@ branch** - Commit message:
 
 `Update README with introduction`
 
-------------------------------------------------------------------------
-
 ## Open a Pull Request
 
 1.  Go to **Pull Requests**
@@ -99,7 +91,6 @@ Create the Pull Request.
 
 **Do NOT merge yet.**
 
-------------------------------------------------------------------------
 
 # Part 4 --- Add a Simple Python File 
 
@@ -111,7 +102,6 @@ Now create a new branch.
 
     `add-python-file`
 
-------------------------------------------------------------------------
 
 ## Create a Python File
 
@@ -136,7 +126,6 @@ Commit message:
 
 Make sure it commits to `add-python-file`, **not main**.
 
-------------------------------------------------------------------------
 
 ## Open a Pull Request
 
@@ -157,8 +146,6 @@ Create the Pull Request.
 
 **Do NOT merge yet.**
 
-------------------------------------------------------------------------
-
 # Part 5 --- Add a Collaborator 
 
 You will be assigned a partner.
@@ -171,7 +158,6 @@ You will be assigned a partner.
 
 You must also accept their invitation.
 
-------------------------------------------------------------------------
 
 # Part 6 --- Approve Each Other's Pull Requests
 
@@ -185,8 +171,6 @@ For at least one of their Pull Requests:
 4.  Click **Approve**
 
 Your partner must approve at least one of yours.
-
-------------------------------------------------------------------------
 
 # Part 7 --- Merge Only After Approval 
 
@@ -202,7 +186,6 @@ You should now have:
 -   Two merged Pull Requests
 -   Deleted branches
 
-------------------------------------------------------------------------
 
 # Submission 
 
@@ -210,10 +193,6 @@ Submit:
 
 1.  Link to your repository
 2.  Link to one of your Pull Requests
-3.  Screenshot showing:
-    -   An approved PR
-    -   Your collaborator listed in Settings
-------------------------------------------------------------------------
 
 # Why This Matters for dbt
 
