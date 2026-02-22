@@ -1,11 +1,4 @@
-# Assignment: Introduction to GitHub (Browser Only)
-
-## Important Rules
-
--   Use GitHub in your **browser only**.
--   Do **NOT** use GitHub Desktop or the terminal.
--   You may **NOT** commit directly to the `main` branch.
--   All changes must go through a **Pull Request**.
+# Exercise: Introduction to GitHub
 
 ------------------------------------------------------------------------
 
@@ -15,16 +8,15 @@ By completing this assignment, you will:
 
 -   Create and structure a GitHub repository\
 -   Write a simple Python file in the browser\
--   Work in branches (not `main`)\
+-   Work in branches\
 -   Open and describe a Pull Request\
 -   Add a collaborator\
 -   Approve and merge a Pull Request
-
-This mirrors professional analytics workflows.
+-   Learn the GitHub flow
 
 ------------------------------------------------------------------------
 
-# Part 1 --- Create Your Repository (10 points)
+# Part 1 --- Create Your Repository
 
 1.  Go to GitHub.com\
 
@@ -44,7 +36,7 @@ This mirrors professional analytics workflows.
 
 ------------------------------------------------------------------------
 
-# Part 2 --- Create Your First Branch (10 points)
+# Part 2 --- Create Your First Branch 
 
 You may not edit `main`.
 
@@ -60,7 +52,7 @@ You should now be working in `setup-readme`.
 
 ------------------------------------------------------------------------
 
-# Part 3 --- Edit README in Your Branch (15 points)
+# Part 3 --- Edit README in Your Branch
 
 While on `setup-readme`, click the pencil icon on `README.md`.
 
@@ -111,7 +103,7 @@ Create the Pull Request.
 
 ------------------------------------------------------------------------
 
-# Part 4 --- Add a Simple Python File (20 points)
+# Part 4 --- Add a Simple Python File 
 
 Now create a new branch.
 
@@ -169,7 +161,7 @@ Create the Pull Request.
 
 ------------------------------------------------------------------------
 
-# Part 5 --- Add a Collaborator (10 points)
+# Part 5 --- Add a Collaborator 
 
 You will be assigned a partner.
 
@@ -183,7 +175,7 @@ You must also accept their invitation.
 
 ------------------------------------------------------------------------
 
-# Part 6 --- Approve Each Other's Pull Requests (15 points)
+# Part 6 --- Approve Each Other's Pull Requests
 
 Go to your partner's repository.
 
@@ -198,7 +190,7 @@ Your partner must approve at least one of yours.
 
 ------------------------------------------------------------------------
 
-# Part 7 --- Merge Only After Approval (10 points)
+# Part 7 --- Merge Only After Approval 
 
 Once your PR shows **Approved**:
 
@@ -214,7 +206,7 @@ You should now have:
 
 ------------------------------------------------------------------------
 
-# Submission (10 points)
+# Submission 
 
 Submit:
 
@@ -223,22 +215,6 @@ Submit:
 3.  Screenshot showing:
     -   An approved PR\
     -   Your collaborator listed in Settings
-
-------------------------------------------------------------------------
-
-# Grading Rubric (100 points)
-
-  Criteria                            Points
-  ----------------------------------- --------
-  Repository created correctly        10
-  No commits made directly to main    15
-  README branch + PR completed        15
-  Python file branch + PR completed   20
-  Collaborator added                  10
-  Approval given to partner           15
-  Professional commit messages        10
-  Branches deleted after merge        5
-
 ------------------------------------------------------------------------
 
 # Why This Matters for dbt
@@ -248,6 +224,3 @@ In dbt, you will:
 -   Never push directly to production (`main`)\
 -   Build features in branches\
 -   Open Pull Requests\
--   Require approval before merging
-
-This is exactly how analytics engineering teams operate.
