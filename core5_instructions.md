@@ -28,7 +28,10 @@
 - Set the user to `fivetran_usr`
 - Set the password to `dw_fivetran`
 - Set the database to `oliver`
-- Set Update Method to 'Detect Changes via Fivetran Teleport Sync'
+- Click 'Save for later' and then click 'Test network setup' and 'Test database access'
+- Use 'Logical Replication' for incremental sync
+- Replication slot is 'fivetran_slot_oliver'
+- Publication name is 'fivetran_pub_oliver'
 - Click 'Save & Test'
 - Click 'Continue' even if it says 'XMIN extensions not enabled'
 - When you get to the Select Data to Sync page, make sure that the following 6 tables are selected and click 'Save & Continue':
