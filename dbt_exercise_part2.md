@@ -1,6 +1,6 @@
 # dbt Exercise Instructions #
 - Let's add data from another source into our Insurance data warehouse that we built in the previous module. The goal here is to learn how to combine
-multiple sources into our datawarehouse and build some conformed dimensions.
+multiple sources into our data warehouse and build some conformed dimensions.
 
 ![alt text](insurancedimensionalmodel_part2.png)
 
