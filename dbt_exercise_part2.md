@@ -10,16 +10,20 @@ multiple sources into our datawarehouse and build some conformed dimensions.
     - Click 'Add Connection'
 - Search for and select 'Amazon S3'
 - Select the destination you previously set up for Snowflake
+- Your Snowflake Destination Virtual Warehouse should populate to your warehousing in Snowflake, if not, select your warehouse from the dropdown.
 - Set the Destination schema to `insurance_dw_source`
 - Set the table group name to `customer_service_interactions`
+- Select `Source naming` under Destination schema names
 - Set the Bucket to `customer-service-interactions`
 - Set the access approach to `Access Key and Secret`
 - Set the Access Key ID to the value provided in canvas
 - Set the Access Key Secret to the value provided in canvas
+- Press `Run connection test`
+- Keep `Define per table` under Configure files selected
 - Click `+ Add files` under Configure files
 - Set the table name to `customer_service_interactions`
 - Click Save
-- Under format, set File Type to csv
+- Under format, set File Type to csv (leave all else the default)
 - Click Save & Test
 - Click 'Sync Now' in the top right corner
 - Wait for the sync to finish, login to Snowflake, check to see if you have a new schema in your database called `insurance_dw_source`
