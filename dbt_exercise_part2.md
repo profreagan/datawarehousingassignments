@@ -63,7 +63,7 @@ sources:
       - name: customer_service_interactions
 ```
 
-### This new table contains interactions between agents and customers. All of the agents in this file already exist in dim_agent, but there are additional customers that do not yet exist in dim_customer. We will need to add these customers to the customer dimenension
+### This new table contains interactions between agents and customers. All of the agents in this file already exist in dim_agent, but there are additional customers that do not yet exist in dim_customer. We will need to add these customers to the customer dimension
 
 We have been told by the business and those who maintain the source systems we are consuming from that we can match customers up based on their full name. There will not be multiple customers with the same exact full name. We will need to add these customer to the customers dimensions and de-duplicate them based on their full name.
 
