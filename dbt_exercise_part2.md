@@ -11,9 +11,9 @@ multiple sources into our datawarehouse and build some conformed dimensions.
 - Search for and select 'Amazon S3'
 - Select the destination you previously set up for Snowflake
 - Your Snowflake Destination Virtual Warehouse should populate to your warehousing in Snowflake, if not, select your warehouse from the dropdown.
-- Set the Destination schema to `insurance_dw_source`
+- Set the Destination schema to `INSURANCE_DW_SOURCE`
 - Set the table group name to `customer_service_interactions`
-- Select `Source naming` under Destination schema names
+- Select `Fivetran naming` under Destination schema names
 - Set the Bucket to `customer-service-interactions`
 - Set the access approach to `Access Key and Secret`
 - Set the Access Key ID to the value provided in canvas
@@ -27,13 +27,13 @@ multiple sources into our datawarehouse and build some conformed dimensions.
 - Click Save & Test
 - Click 'Sync Now' in the top right corner
 - Wait for the sync to finish, login to Snowflake, check to see if you have a new schema in your database called `insurance_dw_source`
-    - Confirm that the tables created and that they have data
+    - Confirm that the table was created and that it has data
 - Go back to fivetran, click on connectors on the left hand side, click your connector that you just set up
     - Make sure the toggle on the top right is set to paused. If it's set to enabled, then click it and change it to paused.
 
 ### Transform (dbt) ###
 - Login to GitHub
-- Go to your repository you created when you set up dbt cloud
+- Go to your repository you created when you set up dbt cloud (data-5360-dbt repo)
 - Click Branches
     - New Branch
     - Call the new branch 'Exercise_dbt_part2'
@@ -42,7 +42,7 @@ multiple sources into our datawarehouse and build some conformed dimensions.
 - Login to dbt Cloud
 - Click Studio
 - Click 'Change Branch'
-    - Select the new branch we just created called 'Exericse_dbt_part2'
+    - Select the new branch we just created called 'Exercise_dbt_part2'
 
 - Open the model directory, open the insurance directory
 - Open up `_src_insurance.yml`
@@ -94,7 +94,7 @@ select
     call_duration_min
 from {{ source('insurance_landing', 'customer_service_interactions')}}
 ```
-
+- Save the file, go to your terminal and run `dbt run -s stg_customer_service_interactions` to build the model
 #### dim_customer (updated)
 - Open up your `dim_customer.sql` file. 
 - Make the following changes to include customers from both data sources we are consuming from.
@@ -189,7 +189,7 @@ inner join {{ ref('dim_date') }} d
 - If for some reason you need to run all files then you can run: `dbt run -s insurance`.
 
 #### Model Attributes YAML file ####
-- Update your model attributes file: `_schema_insurance.yml` with the new models we've created
+- Update/create your model attributes file: `_schema_insurance.yml` with the new models we've created
 - Below is the new version of the file that contains the new models:
 ```
 version: 2
@@ -227,5 +227,4 @@ models:
 - Click `Create Pull Request`
 - merge your branch into the main branch by clicking `Merge pull request`.
 
-## Submit a screenshot of the code for you new fact_interactions model in dbt
-## Submit a second screenshot showing a select * from fact_interaction in Snowflake
+## Submit a link to your GitHub repo, a screenshot of your new fact_interactions model in dbt, and a screenshot showing a SELECT * FROM Fact_Interaction in Snowflake. 
