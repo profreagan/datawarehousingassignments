@@ -1,6 +1,6 @@
 # Core #6 Instructions #
 - Let's add data from another source into our Oliver data warehouse that we built in the preivous module. The goal here is to learn how to combine
-multiple sources into our datawarehouse and build some conformed dimensions.
+multiple sources into our data warehouse and build some conformed dimensions.
 
 ![alt text](oliverdimmodel_part2.png)
 
@@ -32,13 +32,13 @@ multiple sources into our datawarehouse and build some conformed dimensions.
 - Go to your repository you created when you set up dbt cloud
 - Click Branches
     - New Branch
-    - Call the new branch 'Core5'
+    - Call the new branch 'Core6'
     - Click Create New Branch
 
 - Login to dbt Cloud
 - Click Studio
 - Click 'Change Branch'
-    - Select the new branch we just created called 'Exericse_dbt_part2'
+    - Select the new branch we just created called 'Core6'
 
 - Open the model directory, open the oliver directory
 - Open up `_src_oliver.yml`
@@ -47,10 +47,10 @@ multiple sources into our datawarehouse and build some conformed dimensions.
 
 ```
 
-### This new table contains all of certifications that employees have received.
+### This new source table contains all of certifications that employees have received.
 
 #### stg_employee_certifications
-- Build a staging model for the new employee certification data.
+- Build a staging model for the new employee certification data so you can reference it in downstream models.
 - Create a new file in your oliver directory called `stg_customer_service_interactions.sql`
 
 ##### TIPS
