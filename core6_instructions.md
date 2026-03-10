@@ -1,4 +1,4 @@
-# dbt Exercise Instructions #
+# Core #6 Instructions #
 - Let's add data from another source into our Oliver data warehouse that we built in the preivous module. The goal here is to learn how to combine
 multiple sources into our datawarehouse and build some conformed dimensions.
 
