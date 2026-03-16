@@ -51,7 +51,7 @@ multiple sources into our data warehouse and build some conformed dimensions.
 
 #### stg_employee_certifications
 - Build a staging model for the new employee certification data so you can reference it in downstream models.
-- Create a new file in your oliver directory called `stg_customer_service_interactions.sql`
+- Create a new file in your oliver directory called `stg_employee_certifications.sql`
 
 ##### TIPS
 - There is a json field in the source table called `certification_json`
