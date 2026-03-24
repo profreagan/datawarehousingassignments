@@ -14,11 +14,35 @@
 - Login to dbt Cloud
 - Click Studio
 - Click 'Change Branch'
-    - Select the new branch we just created called 'Exericse_dbt_part3'
+    - Select the new branch we just created called 'Exercise_dbt_part3'
 
 
 - We will add all of our tests in the `_schema_insurance.yml` file
+- Your file should read:
+```
+version: 2
 
+models:
+  - name: dim_agent
+    description: "Insurance Agent Dimension"
+  - name: dim_customer
+    description: "Insurance Customer Dimension"
+  - name: dim_date
+    description: "Insurance Date Dimension"
+  - name: dim_policy
+    description: "Insurance Policy Dimension"
+  - name: fact_claim
+    description: "Insurance Claim Fact"
+  - name: stg_customer_service_interactions
+    description: |
+      Staging model for customer service interactions.
+      Each record represents a call between a customer and an agent.
+  - name: fact_interaction
+    description: |
+      Customer Service Interaction Fact.
+      The grain of this table is customer + agent + date
+      Each record represents a call between a customer and an agent on a given date.
+```
 #### unique ####
 - The unique test ensures that each record has a unique value for a given field.
 
