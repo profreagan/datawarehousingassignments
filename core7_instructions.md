@@ -8,13 +8,13 @@
 - Go to your repository you created when you set up dbt cloud
 - Click Branches
     - New Branch
-    - Call the new branch 'Core6'
+    - Call the new branch 'Core7'
     - Click Create New Branch
 
 - Login to dbt Cloud
 - Click Studio
 - Click 'Change Branch'
-    - Select the new branch we just created called 'Core6'
+    - Select the new branch we just created called 'Core7'
 
 
 - We will add all of our tests in the `_schema_oliver.yml` file
@@ -28,7 +28,7 @@
 
 ```
 
-- Run `dbt build -s dim_policy` to ensure that the test passes.
+- Run `dbt build -s [thedim]` to ensure that the test passes.
 
 #### not_null ####
 - The not_null test ensures no records have a null value for a given field.
